@@ -1,0 +1,48 @@
+/**
+ * Define or overwrite your theme selectors within this file.
+**/
+
+// Making buttons hover orange
+.btn-info:hover, .btn-info:focus {
+    background-color: @accent !important;
+}
+
+// Make links have an underline when you hover
+.markdown-render a:hover, 
+[data-ui-markdown] a:hover, 
+[data-ui-richtext] a:hover {
+    text-decoration: underline;
+}
+
+// Space header size and background
+.panel-profile .panel-profile-header {
+    .img-profile-header-background {
+        height: 110px;
+    }
+
+    .img-profile-data {
+        h1.space {
+            text-shadow: 0 0 7px black;
+        }
+
+        h2.space {
+            text-shadow: 0 0 5px black;
+        }
+    }
+}
+
+.nav-pills .dropdown-menu li:hover, 
+.nav-tabs .dropdown-menu li:hover, 
+.account .dropdown-menu li:hover, 
+.nav-pills .dropdown-menu li.selected, 
+.nav-tabs .dropdown-menu li.selected, 
+.account .dropdown-menu li.selected {
+    border-left: 3px solid @link;
+    color: #fff !important;
+    background-color: @primary-shade !important;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+    background-color: @primary-shade;
+}
